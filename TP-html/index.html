@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico 1</title>
+    <style>
+        .nav {
+            padding: 3px;
+            background-color: #B5B2B2;
+            border-radius: 5px;
+        }
+        .navtxt {
+            margin-left: 15px;
+        }
+        span {
+            color: rosybrown;
+        }
+        .subrayado {
+            text-decoration: underline;
+        }
+        .img {
+            width: 20%;
+        }
+        table, th, td{
+            border: 1px solid black;
+        }
+        footer {
+            padding: 50px 0px 0px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <p class="navtxt">Esto es un nav</p>
+    </nav>
+    <header>
+        <h1 id="titulo">Trabajo Practico 1</h1>
+    </header>
+    <section>
+        <article id="estructura">
+            <h2>1.Estructura Básica del Documento HTML</h2>
+            <p>Este documento <span>HTML</span> tiene una estructura básica que incluye la declaración de <span>DOCTYPE</span>, etiquetas de metadatos y un título</p>
+        </article>
+        <article>
+            <h2>2.Encabezados y Propiedades de Texto</h2>
+            <p>
+                <strong>Este es un texto en negrita.</strong>
+            </p>
+            <p>
+                <em>Este es un texto en cursiva.</em>
+            </p>
+            <p class="subrayado">Este es un texto subrayado.</p>
+        </article>
+        <article>
+            <h2>3.Divisiones y Agrupación de Contenido</h2>
+            <div>
+                <h3>Sección 1</h3>
+                <p>Contenido de la primera sección agrupada en un div</p>
+            </div>
+            <div>
+                <h3>Sección 2</h3>
+                <p>Contenido de la segunda sección agrupada en un div</p>
+            </div>
+        </article>
+        <article>
+            <h2>4.Enlaces y Listas</h2>
+            <p> Visita nuestro 
+                <a href="misitio.html">sitio web</a> 
+                para más información
+            </p>
+            <p>
+                Enlaces internos:
+                <ul>
+                    <li><a href="#estructura">Ir a Estructura</a></li>
+                    <li><a href="#multimedia">Ir a Multimedia</a></li>
+                    <li><a href="#formulario">Ir a Formulario</a></li>
+                </ul>
+            </p>
+            <p>
+                Lista desordenada:
+                <ul>
+                    <li>Primer ítem de una lista desordenada</li>
+                    <li>Segundo ítem de una lista desordenada</li>
+                </ul>
+            </p>
+            <p>
+                Lista ordenada:
+                <ol>
+                    <li>Primer ítem de una lista ordenada</li>
+                    <li>Segundo ítem de una lista ordenada</li>
+                </ol>
+            </p>
+        </article>
+        <article id="multimedia">
+            <h2>5.Elementos Multimedia</h2>
+            <img class="img" src="multimedia/img-café.avif" alt="imagen">
+            <video src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4" controls width="400px" height="250px"></video>
+            <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls></audio>
+        </article>
+        <article>
+            <h2>6.Tablas</h2>
+            <table style="width: 200px;">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td>$29,90</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td>$25,50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article id="formulario">
+            <h2>7.Formulario</h2>
+            <form action="/formulario" method="get">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+    </section>
+    <footer id="footer">
+        <a href="mailto:flopigmzm@gmail.com">Email</a>
+        <a href="https://github.com/flopigimenez" target="_blank">GitHub</a>
+        <a href="#titulo">Ir al comienzo</a>
+    </footer>
+</body>
+</html>
